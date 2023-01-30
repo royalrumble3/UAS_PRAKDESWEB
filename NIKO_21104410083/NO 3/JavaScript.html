@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data</title>
+	<script type="text/javascript">
+		function submitForm() {
+			let nama = document.getElementById("nama").value;
+			let nim = document.getElementById("nim").value;
+			let kelas = document.getElementById("kelas").value;
+			
+			document.getElementById("result").innerHTML = "Nama: " + nama + "<br>" + 
+														 "Nim  : " + nim + "<br>" + 
+														 "Kelas: " + kelas;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label for="nama">Nama:</label>
+		<input type="text" id="nama" name="nama"><br><br>
+		<label for="nim">Nim:</label>
+		<input type="text" id="nim" name="nim"><br><br>
+		<label for="kelas">Kelas:</label>
+		<input type="text" id="kelas" name="kelas"><br><br>
+		<input type="button" value="Submit" onclick="submitForm()">
+	</form>
+	<br><br>
+	<div id="result"></div>
+</body>
+</html>
